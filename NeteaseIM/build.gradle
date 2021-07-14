@@ -54,7 +54,13 @@ repositories {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly files('libs/MiPush_SDK_Client_3_7_5.jar')
+    implementation files('libs/neliveplayer-2.4.5.jar')
+    implementation files('libs/nos-android-sdk-allin-2.0.3.jar')
+    implementation files('libs/Transcode_v2.2.0.jar')
+    implementation files('libs/vcloudUpload.jar')
+
     api project(path: ':uikit')
     api 'com.github.zhaokaiqiang.klog:library:1.6.0'
 
